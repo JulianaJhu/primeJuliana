@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211024 21:07:34.235" rpa="false" schemaversion="2">
+<suite id="s1" name="Mobileautomation" source="C:\Users\xcorv\OneDrive\Área de Trabalho\primeJuliana\MOBILE\mobileautomation.robot">
+<test id="s1-t1" name="Caso de Teste 01: Logar no YouTube">
+<kw name="Abrir aplicativo" library="hooks_mobile" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>20</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211024 21:07:34.562" endtime="20211024 21:07:34.562"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211024 21:07:34.562" endtime="20211024 21:07:45.217"/>
+</kw>
+<status status="PASS" starttime="20211024 21:07:34.562" endtime="20211024 21:07:45.218"/>
+</kw>
+<kw name="Logar no aplicativo com a conta x" library="kws_mobileautomation">
+<kw name="Dado que o cliente esteja na tela de Home​" library="kws_mobileautomation">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//*[contains(@text, 'Início')]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:07:45.220" endtime="20211024 21:07:49.245"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=YouTube</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:07:49.245" endtime="20211024 21:07:49.329"/>
+</kw>
+<status status="PASS" starttime="20211024 21:07:45.220" endtime="20211024 21:07:49.329"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Conta</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:07:49.331" level="INFO">Clicking element 'accessibility_id=Conta'.</msg>
+<status status="PASS" starttime="20211024 21:07:49.329" endtime="20211024 21:07:49.446"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/button</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:07:49.446" endtime="20211024 21:07:50.189"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:07:50.191" level="INFO">Clicking element 'id=com.google.android.youtube:id/button'.</msg>
+<status status="PASS" starttime="20211024 21:07:50.189" endtime="20211024 21:07:50.258"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/name</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:07:50.258" endtime="20211024 21:07:51.077"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.google.android.youtube:id/name</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:07:51.080" level="INFO">Clicking element 'id=com.google.android.youtube:id/name'.</msg>
+<status status="PASS" starttime="20211024 21:07:51.077" endtime="20211024 21:07:51.242"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id="identifierId"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:07:51.242" endtime="20211024 21:07:58.264"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=//android.widget.EditText[@resource-id="identifierId"]</arg>
+<arg>balajujubinha@gmail.com</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211024 21:07:58.267" level="INFO">Typing text 'balajujubinha@gmail.com' into text field 'xpath=//android.widget.EditText[@resource-id="identifierId"]'</msg>
+<status status="PASS" starttime="20211024 21:07:58.265" endtime="20211024 21:07:58.342"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="PRÓXIMA"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:07:58.344" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="PRÓXIMA"]'.</msg>
+<status status="PASS" starttime="20211024 21:07:58.342" endtime="20211024 21:07:59.291"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="password"]//android.widget.EditText</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:07:59.291" endtime="20211024 21:08:02.029"/>
+</kw>
+<kw name="Input Password" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@resource-id="password"]//android.widget.EditText</arg>
+<arg>bj987654321</arg>
+<doc>Types the given password into text field identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:02.031" level="INFO">Typing password into text field 'xpath=//android.view.View[@resource-id="password"]//android.widget.EditText'</msg>
+<status status="PASS" starttime="20211024 21:08:02.029" endtime="20211024 21:08:02.117"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="PRÓXIMA"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:02.119" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="PRÓXIMA"]'.</msg>
+<status status="PASS" starttime="20211024 21:08:02.117" endtime="20211024 21:08:02.671"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="Concordo"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:08:02.671" endtime="20211024 21:08:04.707"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="Concordo"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:04.708" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="Concordo"]'.</msg>
+<status status="PASS" starttime="20211024 21:08:04.707" endtime="20211024 21:08:04.803"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>id=com.google.android.gms:id/sud_items_switch</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:08:04.803" endtime="20211024 21:08:08.544"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="MAIS"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:08:08.544" endtime="20211024 21:08:08.641"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="MAIS"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:08.644" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="MAIS"]'.</msg>
+<status status="PASS" starttime="20211024 21:08:08.641" endtime="20211024 21:08:08.758"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="ACEITAR"]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:08:08.758" endtime="20211024 21:08:09.411"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.widget.Button[@text="ACEITAR"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:09.414" level="INFO">Clicking element 'xpath=//android.widget.Button[@text="ACEITAR"]'.</msg>
+<status status="PASS" starttime="20211024 21:08:09.411" endtime="20211024 21:08:09.558"/>
+</kw>
+<status status="PASS" starttime="20211024 21:07:45.219" endtime="20211024 21:08:09.558"/>
+</kw>
+<kw name="Entrar no menu “Explorar”" library="kws_mobileautomation">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Explorar</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:08:09.560" endtime="20211024 21:08:14.492"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Explorar</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:14.495" level="INFO">Clicking element 'accessibility_id=Explorar'.</msg>
+<status status="PASS" starttime="20211024 21:08:14.492" endtime="20211024 21:08:15.312"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Em alta</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20211024 21:08:15.313" endtime="20211024 21:08:15.781"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:09.560" endtime="20211024 21:08:15.781"/>
+</kw>
+<kw name="Usar swipe de tela até o 10 item da tela" library="kws_mobileautomation">
+<for flavor="IN RANGE">
+<var>${counter}</var>
+<value>0</value>
+<value>10</value>
+<iter>
+<var name="${counter}">0</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:15.784" endtime="20211024 21:08:17.161"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:18.172" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:17.161" endtime="20211024 21:08:18.172"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:15.784" endtime="20211024 21:08:18.172"/>
+</iter>
+<iter>
+<var name="${counter}">1</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:18.173" endtime="20211024 21:08:19.463"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:20.470" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:19.464" endtime="20211024 21:08:20.470"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:18.173" endtime="20211024 21:08:20.470"/>
+</iter>
+<iter>
+<var name="${counter}">2</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:20.471" endtime="20211024 21:08:21.743"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:22.757" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:21.743" endtime="20211024 21:08:22.757"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:20.471" endtime="20211024 21:08:22.757"/>
+</iter>
+<iter>
+<var name="${counter}">3</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:22.757" endtime="20211024 21:08:24.021"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:25.029" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:24.021" endtime="20211024 21:08:25.029"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:22.757" endtime="20211024 21:08:25.029"/>
+</iter>
+<iter>
+<var name="${counter}">4</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:25.029" endtime="20211024 21:08:26.276"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:27.281" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:26.276" endtime="20211024 21:08:27.281"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:25.029" endtime="20211024 21:08:27.281"/>
+</iter>
+<iter>
+<var name="${counter}">5</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:27.281" endtime="20211024 21:08:28.558"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:29.562" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:28.558" endtime="20211024 21:08:29.562"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:27.281" endtime="20211024 21:08:29.562"/>
+</iter>
+<iter>
+<var name="${counter}">6</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:29.562" endtime="20211024 21:08:30.822"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:31.822" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:30.822" endtime="20211024 21:08:31.822"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:29.562" endtime="20211024 21:08:31.822"/>
+</iter>
+<iter>
+<var name="${counter}">7</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:31.822" endtime="20211024 21:08:33.073"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:34.075" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:33.073" endtime="20211024 21:08:34.075"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:31.822" endtime="20211024 21:08:34.075"/>
+</iter>
+<iter>
+<var name="${counter}">8</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:34.075" endtime="20211024 21:08:35.340"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:36.353" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:35.340" endtime="20211024 21:08:36.353"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:34.075" endtime="20211024 21:08:36.353"/>
+</iter>
+<iter>
+<var name="${counter}">9</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:08:36.353" endtime="20211024 21:08:37.604"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:38.616" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:08:37.604" endtime="20211024 21:08:38.616"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:36.353" endtime="20211024 21:08:38.616"/>
+</iter>
+<status status="PASS" starttime="20211024 21:08:15.784" endtime="20211024 21:08:38.616"/>
+</for>
+<status status="PASS" starttime="20211024 21:08:15.783" endtime="20211024 21:08:38.616"/>
+</kw>
+<kw name="Clicar no vídeo" library="kws_mobileautomation">
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>512</arg>
+<arg>882</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20211024 21:08:38.619" level="INFO">Pressing at (512, 882).</msg>
+<status status="PASS" starttime="20211024 21:08:38.617" endtime="20211024 21:08:38.773"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:41.781" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211024 21:08:38.773" endtime="20211024 21:08:41.781"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 21:08:41.781" endtime="20211024 21:08:41.820"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:08:44.828" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211024 21:08:41.820" endtime="20211024 21:08:44.828"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:38.617" endtime="20211024 21:08:44.828"/>
+</kw>
+<kw name="Fechar aplicativo" library="hooks_mobile" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211024 21:08:44.829" endtime="20211024 21:08:45.461"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:44.829" endtime="20211024 21:08:45.461"/>
+</kw>
+<tag>LOGAR</tag>
+<status status="PASS" starttime="20211024 21:07:34.561" endtime="20211024 21:08:45.461"/>
+</test>
+<test id="s1-t2" name="Caso de Teste 02: Usar método Swipe na tela">
+<kw name="Abrir aplicativo" library="hooks_mobile" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>20</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211024 21:08:45.463" endtime="20211024 21:08:45.464"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211024 21:08:45.464" endtime="20211024 21:08:55.771"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:45.463" endtime="20211024 21:08:55.771"/>
+</kw>
+<kw name="Entrar no menu “Explorar”" library="kws_mobileautomation">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Explorar</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:08:55.775" endtime="20211024 21:08:58.410"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Explorar</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:08:58.412" level="INFO">Clicking element 'accessibility_id=Explorar'.</msg>
+<status status="PASS" starttime="20211024 21:08:58.411" endtime="20211024 21:09:01.187"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Em alta</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20211024 21:09:01.187" endtime="20211024 21:09:02.593"/>
+</kw>
+<status status="PASS" starttime="20211024 21:08:55.774" endtime="20211024 21:09:02.593"/>
+</kw>
+<kw name="Usar swipe de tela até o 10 item da tela" library="kws_mobileautomation">
+<for flavor="IN RANGE">
+<var>${counter}</var>
+<value>0</value>
+<value>10</value>
+<iter>
+<var name="${counter}">0</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:02.594" endtime="20211024 21:09:03.955"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:04.964" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:03.956" endtime="20211024 21:09:04.964"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:02.594" endtime="20211024 21:09:04.964"/>
+</iter>
+<iter>
+<var name="${counter}">1</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:04.964" endtime="20211024 21:09:06.293"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:07.298" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:06.294" endtime="20211024 21:09:07.298"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:04.964" endtime="20211024 21:09:07.298"/>
+</iter>
+<iter>
+<var name="${counter}">2</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:07.298" endtime="20211024 21:09:08.759"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:09.773" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:08.759" endtime="20211024 21:09:09.773"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:07.298" endtime="20211024 21:09:09.773"/>
+</iter>
+<iter>
+<var name="${counter}">3</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:09.773" endtime="20211024 21:09:11.394"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:12.397" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:11.395" endtime="20211024 21:09:12.397"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:09.773" endtime="20211024 21:09:12.397"/>
+</iter>
+<iter>
+<var name="${counter}">4</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:12.397" endtime="20211024 21:09:13.812"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:14.816" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:13.812" endtime="20211024 21:09:14.816"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:12.397" endtime="20211024 21:09:14.816"/>
+</iter>
+<iter>
+<var name="${counter}">5</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:14.816" endtime="20211024 21:09:16.187"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:17.194" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:16.187" endtime="20211024 21:09:17.194"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:14.816" endtime="20211024 21:09:17.194"/>
+</iter>
+<iter>
+<var name="${counter}">6</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:17.194" endtime="20211024 21:09:18.573"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:19.588" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:18.573" endtime="20211024 21:09:19.588"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:17.194" endtime="20211024 21:09:19.588"/>
+</iter>
+<iter>
+<var name="${counter}">7</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:19.588" endtime="20211024 21:09:20.985"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:21.990" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:20.985" endtime="20211024 21:09:21.990"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:19.588" endtime="20211024 21:09:21.990"/>
+</iter>
+<iter>
+<var name="${counter}">8</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:21.990" endtime="20211024 21:09:23.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:24.538" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:23.523" endtime="20211024 21:09:24.538"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:21.990" endtime="20211024 21:09:24.538"/>
+</iter>
+<iter>
+<var name="${counter}">9</var>
+<kw name="Swipe" library="AppiumLibrary">
+<arg>500</arg>
+<arg>1350</arg>
+<arg>500</arg>
+<arg>500</arg>
+<doc>Swipe from one point to another point, for an optional duration.</doc>
+<status status="PASS" starttime="20211024 21:09:24.538" endtime="20211024 21:09:25.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:26.858" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211024 21:09:25.842" endtime="20211024 21:09:26.858"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:24.538" endtime="20211024 21:09:26.858"/>
+</iter>
+<status status="PASS" starttime="20211024 21:09:02.594" endtime="20211024 21:09:26.858"/>
+</for>
+<status status="PASS" starttime="20211024 21:09:02.593" endtime="20211024 21:09:26.858"/>
+</kw>
+<kw name="Clicar no vídeo" library="kws_mobileautomation">
+<kw name="Click Element At Coordinates" library="AppiumLibrary">
+<arg>512</arg>
+<arg>882</arg>
+<doc>click element at a certain coordinate</doc>
+<msg timestamp="20211024 21:09:26.861" level="INFO">Pressing at (512, 882).</msg>
+<status status="PASS" starttime="20211024 21:09:26.859" endtime="20211024 21:09:27.009"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:30.016" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211024 21:09:27.009" endtime="20211024 21:09:30.016"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>4</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 21:09:30.016" endtime="20211024 21:09:30.389"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211024 21:09:33.397" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211024 21:09:30.389" endtime="20211024 21:09:33.397"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:26.859" endtime="20211024 21:09:33.397"/>
+</kw>
+<kw name="Fechar aplicativo" library="hooks_mobile" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211024 21:09:33.399" endtime="20211024 21:09:33.897"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:33.398" endtime="20211024 21:09:33.897"/>
+</kw>
+<tag>EXPLORAR</tag>
+<status status="PASS" starttime="20211024 21:08:45.462" endtime="20211024 21:09:33.898"/>
+</test>
+<test id="s1-t3" name="Caso de Teste 03: Pesquisar canal “Prime Experts”​">
+<kw name="Abrir aplicativo" library="hooks_mobile" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>20</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20211024 21:09:33.901" endtime="20211024 21:09:33.901"/>
+</kw>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=emulator-5554</arg>
+<arg>automationName=uiautomator2</arg>
+<arg>appPackage=com.google.android.youtube</arg>
+<arg>appActivity=com.google.android.youtube.HomeActivity</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20211024 21:09:33.901" endtime="20211024 21:09:43.879"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:33.900" endtime="20211024 21:09:43.879"/>
+</kw>
+<kw name="Dado que o cliente esteja na tela de Home​" library="kws_mobileautomation">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//*[contains(@text, 'Início')]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:09:43.880" endtime="20211024 21:09:48.812"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=YouTube</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:09:48.812" endtime="20211024 21:09:48.890"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:43.880" endtime="20211024 21:09:48.890"/>
+</kw>
+<kw name="E pesquise um vídeo sobre &quot;Prime Experts&quot;​" library="kws_mobileautomation" sourcename="E pesquise um vídeo sobre &quot;${PESQUISA}&quot;​">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Pesquisar</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:09:48.893" level="INFO">Clicking element 'accessibility_id=Pesquisar'.</msg>
+<status status="PASS" starttime="20211024 21:09:48.891" endtime="20211024 21:09:49.004"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>id=search_edit_text</arg>
+<arg>${PESQUISA}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20211024 21:09:49.006" level="INFO">Typing text 'Prime Experts' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20211024 21:09:49.005" endtime="20211024 21:09:50.911"/>
+</kw>
+<kw name="Press Keycode" library="AppiumLibrary">
+<arg>66</arg>
+<doc>Sends a press of keycode to the device.</doc>
+<status status="PASS" starttime="20211024 21:09:50.912" endtime="20211024 21:09:52.030"/>
+</kw>
+<status status="PASS" starttime="20211024 21:09:48.890" endtime="20211024 21:09:52.031"/>
+</kw>
+<kw name="E acessar o canal da Prime​" library="kws_mobileautomation">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>xpath=//android.view.ViewGroup[contains(@content-desc,"Prime Experts - Parceria entre Prime Control e UniBrasil ")]</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:09:52.032" endtime="20211024 21:09:53.689"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.ViewGroup[contains(@content-desc,"Prime Experts - Parceria entre Prime Control e UniBrasil ")]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:09:53.692" level="INFO">Clicking element 'xpath=//android.view.ViewGroup[contains(@content-desc,"Prime Experts - Parceria entre Prime Control e UniBrasil ")]'.</msg>
+<status status="PASS" starttime="20211024 21:09:53.690" endtime="20211024 21:09:56.059"/>
+</kw>
+<for flavor="IN RANGE">
+<var>${counter}</var>
+<value>0</value>
+<value>10</value>
+<iter>
+<var name="${counter}">0</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:02.021" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:01.556" endtime="20211024 21:10:02.022"/>
+</kw>
+<msg timestamp="20211024 21:10:02.024" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:09:56.060" endtime="20211024 21:10:02.024"/>
+</kw>
+<msg timestamp="20211024 21:10:02.024" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:09:56.060" endtime="20211024 21:10:02.024"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:02.024" endtime="20211024 21:10:02.024"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:02.024" endtime="20211024 21:10:02.024"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:02.024" endtime="20211024 21:10:02.024"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:02.024" endtime="20211024 21:10:02.025"/>
+</if>
+<status status="PASS" starttime="20211024 21:09:56.060" endtime="20211024 21:10:02.025"/>
+</iter>
+<iter>
+<var name="${counter}">1</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:08.035" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:07.201" endtime="20211024 21:10:08.035"/>
+</kw>
+<msg timestamp="20211024 21:10:08.037" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:02.025" endtime="20211024 21:10:08.037"/>
+</kw>
+<msg timestamp="20211024 21:10:08.037" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:02.025" endtime="20211024 21:10:08.037"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:08.038" endtime="20211024 21:10:08.038"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:08.038" endtime="20211024 21:10:08.038"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:08.037" endtime="20211024 21:10:08.038"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:08.037" endtime="20211024 21:10:08.038"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:02.025" endtime="20211024 21:10:08.038"/>
+</iter>
+<iter>
+<var name="${counter}">2</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:14.062" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-3.png"&gt;&lt;img src="appium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:13.220" endtime="20211024 21:10:14.062"/>
+</kw>
+<msg timestamp="20211024 21:10:14.063" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:08.039" endtime="20211024 21:10:14.064"/>
+</kw>
+<msg timestamp="20211024 21:10:14.064" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:08.039" endtime="20211024 21:10:14.064"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:14.064" endtime="20211024 21:10:14.064"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:14.064" endtime="20211024 21:10:14.065"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:14.064" endtime="20211024 21:10:14.065"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:14.064" endtime="20211024 21:10:14.065"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:08.038" endtime="20211024 21:10:14.065"/>
+</iter>
+<iter>
+<var name="${counter}">3</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:20.152" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-4.png"&gt;&lt;img src="appium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:19.289" endtime="20211024 21:10:20.152"/>
+</kw>
+<msg timestamp="20211024 21:10:20.154" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:14.065" endtime="20211024 21:10:20.154"/>
+</kw>
+<msg timestamp="20211024 21:10:20.154" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:14.065" endtime="20211024 21:10:20.154"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:20.155" endtime="20211024 21:10:20.155"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:20.155" endtime="20211024 21:10:20.155"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:20.155" endtime="20211024 21:10:20.155"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:20.155" endtime="20211024 21:10:20.155"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:14.065" endtime="20211024 21:10:20.155"/>
+</iter>
+<iter>
+<var name="${counter}">4</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:26.075" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-5.png"&gt;&lt;img src="appium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:25.320" endtime="20211024 21:10:26.076"/>
+</kw>
+<msg timestamp="20211024 21:10:26.077" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:20.156" endtime="20211024 21:10:26.078"/>
+</kw>
+<msg timestamp="20211024 21:10:26.078" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:20.156" endtime="20211024 21:10:26.078"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:26.078" endtime="20211024 21:10:26.078"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:26.079" endtime="20211024 21:10:26.079"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:26.078" endtime="20211024 21:10:26.079"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:26.078" endtime="20211024 21:10:26.079"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:20.156" endtime="20211024 21:10:26.079"/>
+</iter>
+<iter>
+<var name="${counter}">5</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:31.864" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-6.png"&gt;&lt;img src="appium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:31.176" endtime="20211024 21:10:31.864"/>
+</kw>
+<msg timestamp="20211024 21:10:31.865" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:26.080" endtime="20211024 21:10:31.866"/>
+</kw>
+<msg timestamp="20211024 21:10:31.866" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:26.079" endtime="20211024 21:10:31.866"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:31.866" endtime="20211024 21:10:31.866"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:31.866" endtime="20211024 21:10:31.866"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:31.866" endtime="20211024 21:10:31.866"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:31.866" endtime="20211024 21:10:31.866"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:26.079" endtime="20211024 21:10:31.866"/>
+</iter>
+<iter>
+<var name="${counter}">6</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:37.709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-7.png"&gt;&lt;img src="appium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:37.007" endtime="20211024 21:10:37.709"/>
+</kw>
+<msg timestamp="20211024 21:10:37.711" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:31.867" endtime="20211024 21:10:37.711"/>
+</kw>
+<msg timestamp="20211024 21:10:37.712" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:31.867" endtime="20211024 21:10:37.712"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:37.712" endtime="20211024 21:10:37.712"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:37.712" endtime="20211024 21:10:37.712"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:37.712" endtime="20211024 21:10:37.712"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:37.712" endtime="20211024 21:10:37.712"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:31.866" endtime="20211024 21:10:37.712"/>
+</iter>
+<iter>
+<var name="${counter}">7</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:43.500" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-8.png"&gt;&lt;img src="appium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:42.852" endtime="20211024 21:10:43.501"/>
+</kw>
+<msg timestamp="20211024 21:10:43.503" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:37.713" endtime="20211024 21:10:43.503"/>
+</kw>
+<msg timestamp="20211024 21:10:43.503" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:37.712" endtime="20211024 21:10:43.503"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:43.503" endtime="20211024 21:10:43.503"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:43.504" endtime="20211024 21:10:43.504"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:43.503" endtime="20211024 21:10:43.504"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:43.503" endtime="20211024 21:10:43.504"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:37.712" endtime="20211024 21:10:43.504"/>
+</iter>
+<iter>
+<var name="${counter}">8</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:49.285" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-9.png"&gt;&lt;img src="appium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:48.671" endtime="20211024 21:10:49.286"/>
+</kw>
+<msg timestamp="20211024 21:10:49.287" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:43.505" endtime="20211024 21:10:49.287"/>
+</kw>
+<msg timestamp="20211024 21:10:49.287" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:43.504" endtime="20211024 21:10:49.287"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:49.288" endtime="20211024 21:10:49.288"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:49.288" endtime="20211024 21:10:49.288"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:49.288" endtime="20211024 21:10:49.288"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:49.287" endtime="20211024 21:10:49.288"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:43.504" endtime="20211024 21:10:49.289"/>
+</iter>
+<iter>
+<var name="${counter}">9</var>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${status}</var>
+<arg>Wait Until Element Is Visible</arg>
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<arg>5</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20211024 21:10:54.971" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-10.png"&gt;&lt;img src="appium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211024 21:10:54.410" endtime="20211024 21:10:54.972"/>
+</kw>
+<msg timestamp="20211024 21:10:54.973" level="FAIL">Element locator 'accessibility_id=Fechar' did not match any elements after 5 seconds</msg>
+<status status="FAIL" starttime="20211024 21:10:49.290" endtime="20211024 21:10:54.973"/>
+</kw>
+<msg timestamp="20211024 21:10:54.973" level="INFO">${status} = False</msg>
+<status status="PASS" starttime="20211024 21:10:49.289" endtime="20211024 21:10:54.974"/>
+</kw>
+<if>
+<branch type="IF" condition="${status}">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Fechar</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:54.974" endtime="20211024 21:10:54.974"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211024 21:10:54.974" endtime="20211024 21:10:54.974"/>
+</kw>
+<status status="NOT RUN" starttime="20211024 21:10:54.974" endtime="20211024 21:10:54.974"/>
+</branch>
+<status status="PASS" starttime="20211024 21:10:54.974" endtime="20211024 21:10:54.974"/>
+</if>
+<status status="PASS" starttime="20211024 21:10:49.289" endtime="20211024 21:10:54.975"/>
+</iter>
+<status status="PASS" starttime="20211024 21:09:56.059" endtime="20211024 21:10:54.975"/>
+</for>
+<status status="PASS" starttime="20211024 21:09:52.031" endtime="20211024 21:10:54.975"/>
+</kw>
+<kw name="Quando clicar em Inscrever-se​" library="kws_mobileautomation">
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Inscreva-se em Prime Control.</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20211024 21:10:54.980" level="INFO">Clicking element 'accessibility_id=Inscreva-se em Prime Control.'.</msg>
+<status status="PASS" starttime="20211024 21:10:54.978" endtime="20211024 21:10:55.104"/>
+</kw>
+<status status="PASS" starttime="20211024 21:10:54.977" endtime="20211024 21:10:55.104"/>
+</kw>
+<kw name="Então será apresentado como Inscrito​" library="kws_mobileautomation">
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=Cancelar inscrição de Prime Control.</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" starttime="20211024 21:10:55.106" endtime="20211024 21:10:55.746"/>
+</kw>
+<status status="PASS" starttime="20211024 21:10:55.105" endtime="20211024 21:10:55.746"/>
+</kw>
+<kw name="Fechar aplicativo" library="hooks_mobile" type="TEARDOWN">
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20211024 21:10:55.747" endtime="20211024 21:10:56.413"/>
+</kw>
+<status status="PASS" starttime="20211024 21:10:55.747" endtime="20211024 21:10:56.413"/>
+</kw>
+<tag>PRIME</tag>
+<status status="PASS" starttime="20211024 21:09:33.899" endtime="20211024 21:10:56.414"/>
+</test>
+<doc>Testes Mobile</doc>
+<status status="PASS" starttime="20211024 21:07:34.237" endtime="20211024 21:10:56.416"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">EXPLORAR</stat>
+<stat pass="1" fail="0" skip="0">LOGAR</stat>
+<stat pass="1" fail="0" skip="0">PRIME</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Mobileautomation">Mobileautomation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
